@@ -5,6 +5,8 @@ import javax.persistence.*;
 @Entity
 @Table (name = "car")
 public class Car {
+    @OneToOne
+    private User user;
     @Override
     public String toString() {
         return "Car{" +
